@@ -17,7 +17,7 @@ Jobs:
         name: Set Up Python # Set Up Python environment
       - uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.12'
       - name: Install Dependencies # Installs any Packages
         run: |
          python -m pip install --upgrade pip
@@ -27,7 +27,7 @@ Jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID}}
-          aws-access-key-secret: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          aws-secret-key-secret: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws-region: us-east-1
      
       - name: Deploy Lambda Function #Zip Lambda directory and update lambda function
