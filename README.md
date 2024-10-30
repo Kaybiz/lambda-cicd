@@ -31,31 +31,11 @@ The automated pipeline ensures consistent and reliable deployments to AWS Lambda
 
 ![Lambda Function Activated](images/aws-lambda-function-activated.png)
 
-## Project Structure
-.
-├── .github/
-│ └── workflows/
-│ └── lambda.yml
-├── lambda/
-│ ├── requirements.txt
-│ └── lambda function files
-├── images/
-│ └── project screenshots
-└── README.md
-
 
 ## Security Implementation
 - AWS credentials stored securely in GitHub Secrets
 - IAM roles configured with least privilege principle
 - Secure credential handling in CI/CD pipeline
-
-## Setup Instructions
-
-### Prerequisites
-1. AWS Account
-2. GitHub Account
-3. Python 3.12
-4. AWS CLI
 
 ### Configuration Steps
 1. Create AWS Lambda function
